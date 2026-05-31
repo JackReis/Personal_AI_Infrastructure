@@ -2,6 +2,9 @@
 
 import { useCallback, useState } from "react";
 import { TELOS as FALLBACK, type Telos } from "./data";
+import { REAL_TELOS } from "./data-real";
+
+const USE_REAL = true;   // toggle false to fall back to sample data
 
 export function useTelosData(): { telos: Telos | null; refetch: () => void; error: string | null } {
   const [version, setVersion] = useState<number>(0);
@@ -11,5 +14,5 @@ export function useTelosData(): { telos: Telos | null; refetch: () => void; erro
   }, []);
 
   void version;
-  return { telos: FALLBACK, refetch, error: null };
+  return { telos: USE_REAL ? REAL_TELOS : FALLBACK, refetch, error: null };
 }
