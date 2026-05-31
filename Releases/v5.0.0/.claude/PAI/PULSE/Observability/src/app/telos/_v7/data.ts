@@ -218,10 +218,10 @@ export interface Telos {
 export const TELOS = {
   owner: { name: 'Sample User', day: 'Mon · 1 Jan', streak: 7 },
 
-  // 1. IDEAL STATE — six dimensions with targets
+  // 1. IDEAL STATE — eleven dimensions with targets
   idealState: {
     horizon: 'by Dec 2027',
-    note: 'A sample target state measured across six dimensions.',
+    note: 'A sample target state measured across eleven dimensions.',
   },
   dimensions: [
     { id:'health',        label:'Health',        cur:71, ideal:90, velo:+1.2, color:'--health'        },
@@ -230,6 +230,13 @@ export const TELOS = {
     { id:'creative',      label:'Creative',      cur:48, ideal:85, velo:+2.4, color:'--creative'      },
     { id:'relationships', label:'Relationships', cur:77, ideal:90, velo:-0.4, color:'--relationships' },
     { id:'rhythms',       label:'Rhythms',       cur:66, ideal:85, velo:+0.9, color:'--rhythms'       },
+    { id:'career',        label:'Career',        cur:55, ideal:85, velo:+2.0, color:'--career'        },
+    { id:'learning',      label:'Learning',      cur:60, ideal:80, velo:+1.5, color:'--learning'      },
+    { id:'environment',   label:'Environment',   cur:45, ideal:75, velo:+0.8, color:'--environment'   },
+    { id:'community',     label:'Community',     cur:50, ideal:80, velo:+1.0, color:'--community'     },
+    { id:'legacy',        label:'Legacy',        cur:35, ideal:70, velo:+0.5, color:'--legacy'        },
+    { id:'play',          label:'Play',          cur:40, ideal:70, velo:+2.5, color:'--play'          },
+    { id:'spirit',        label:'Spirit',        cur:58, ideal:85, velo:+1.8, color:'--spirit'        },
   ],
 
   snapshot: [
@@ -273,6 +280,13 @@ export const TELOS = {
     { id:'G8',  title:'Sample relationships goal — connection cadence', kpi:'1.4/wk', target:'2/wk', pct:70, delta:-0.1, dims:['relationships'], metrics:['MT7'] },
     { id:'G9',  title:'Sample completion rate goal',              kpi:'54%', target:'80%', pct:54, delta:+6,   dims:['creative','rhythms'],        metrics:['MT8'] },
     { id:'G10', title:'Sample runway goal',                       kpi:'7.8mo', target:'12mo', pct:65, delta:+0.4, dims:['money','freedom'],        metrics:['MT9'] },
+    { id:'G11', title:'Mentor 2 junior engineers quarterly',        kpi:'1 / 2', target:'2', pct:50, delta:+1,   dims:['career','community'],        metrics:['MT10'] },
+    { id:'G12', title:'Complete online course — system design',     kpi:'3 / 12', target:'12', pct:25, delta:+3,  dims:['learning','career'],         metrics:['MT11'] },
+    { id:'G13', title:'Declutter home office + digital archive',    kpi:'2 / 5', target:'5', pct:40, delta:+2,   dims:['environment','freedom'],     metrics:['MT12'] },
+    { id:'G14', title:'Host monthly community dinner',              kpi:'2 / 12', target:'12', pct:17, delta:+1,  dims:['community','relationships'], metrics:['MT13'] },
+    { id:'G15', title:'Publish open-source tool for builders',      kpi:'0 / 1', target:'1', pct:0, delta:0,    dims:['legacy','creative'],          metrics:['MT14'] },
+    { id:'G16', title:'Weekly unstructured play — no screens',      kpi:'3 / 7', target:'7', pct:43, delta:+2,   dims:['play','health'],              metrics:['MT15'] },
+    { id:'G17', title:'Daily meditation practice',                  kpi:'4 / 7', target:'7', pct:57, delta:+1,   dims:['spirit','rhythms'],           metrics:['MT16'] },
   ],
 
   // 5. METRICS — first-class, tracked independently of Goals

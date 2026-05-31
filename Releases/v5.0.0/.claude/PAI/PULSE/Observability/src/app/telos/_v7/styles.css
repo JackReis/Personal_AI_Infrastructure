@@ -1088,3 +1088,36 @@ html[data-density="spacious"] .narrative { font-size:24px; line-height:1.55; }
   background: linear-gradient(135deg, rgba(183,148,244,0.10), rgba(52,211,153,0.06) 50%, #141C38 100%) !important;
   border-left: 3px solid #B794F4 !important;
 }
+
+/* ========== EXPANDED DIMENSION PILLS ========== */
+.pill.pill-career      { background: rgba(129,140,248,0.14); color: #818CF8 !important; border-color: rgba(129,140,248,0.3); }
+.pill.pill-learning    { background: rgba(244,114,182,0.14); color: #F472B6 !important; border-color: rgba(244,114,182,0.3); }
+.pill.pill-environment { background: rgba(163,230,53,0.14);  color: #A3E635 !important; border-color: rgba(163,230,53,0.3); }
+.pill.pill-community   { background: rgba(251,146,60,0.14);  color: #FB923C !important; border-color: rgba(251,146,60,0.3); }
+.pill.pill-legacy      { background: rgba(192,132,252,0.14);  color: #C084FC !important; border-color: rgba(192,132,252,0.3); }
+.pill.pill-play        { background: rgba(34,211,238,0.14);    color: #22D3EE !important; border-color: rgba(34,211,238,0.3); }
+.pill.pill-spirit      { background: rgba(250,204,21,0.14);    color: #FACC15 !important; border-color: rgba(250,204,21,0.3); }
+
+/* ========== MOBILE BREAKPOINT (max-width: 640px) ========== */
+@media (max-width: 640px) {
+  .telos-card { padding: 16px !important; gap: 8px; }
+  .telos-card .pill { font-size: 10px; padding: 1px 8px; }
+  .prob-grid, .goals-grid, .metric-grid { grid-template-columns: 1fr !important; }
+  .team-grid { grid-template-columns: 1fr !important; }
+  .budget-cols { grid-template-columns: 1fr !important; }
+  .cs-cols { grid-template-columns: 1fr !important; }
+  .hero-rings { grid-template-columns: repeat(2, 1fr) !important; }
+  .hero-rings .ring-wrap { max-width: min(90px, 100%) !important; }
+  .band-title { font-size: 18px !important; }
+  .telos-card .goal-title { font-size: 14px !important; }
+  .telos-card .goal-kpi { font-size: 12px !important; }
+}
+
+/* ========== TABLET BREAKPOINT (641px - 959px) ========== */
+@media (min-width: 641px) and (max-width: 959px) {
+  .prob-grid, .goals-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .metric-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .team-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .budget-cols { grid-template-columns: repeat(2, 1fr) !important; }
+  .hero-rings { grid-template-columns: repeat(3, 1fr) !important; }
+}
