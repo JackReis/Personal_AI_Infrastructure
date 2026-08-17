@@ -1,0 +1,14 @@
+{
+  "app/agents/page.tsx -> ../ladder/page": {
+    "id": "app/agents/page.tsx -> ../ladder/page",
+    "files": [
+      "static/chunks/_app-pages-browser_src_app_ladder_page_tsx.js"
+    ]
+  },
+  "app/agents/page.tsx -> ../novelty/page": {
+    "id": "app/agents/page.tsx -> ../novelty/page",
+    "files": [
+      "static/chunks/_app-pages-browser_src_app_novelty_page_tsx.js"
+    ]
+  }
+}

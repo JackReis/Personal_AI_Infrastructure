@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/jack.reis/pai-sandbox/PAI-repo/Releases/v5.0.0/.claude/PAI/PULSE/Observability/src/app/layout\":[\"static/media/39a5c75b28bf49bc.p.woff2\",\"static/media/b5bb120f6fcabcb4-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
